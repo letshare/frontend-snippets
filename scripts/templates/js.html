@@ -7,51 +7,52 @@
         <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     </head>
     <body>
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            {foreach $titles as $index => $title}
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="heading-{$index}">
-                    <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{$index}"  aria-expanded="false" aria-controls="collapse-{$index}">
-                    <span class="glyphicon glyphicon-chevron-down"></span> #{$index} {$title} 
-                    </a>
-                    </h4>
-                </div>
-                <div id="collapse-{$index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{$index}">
-                    <div class="panel-body">
-                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-{$index}">
-                        demo
-                        </button>
-
-                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-{$index}" href="{$index}.js">
-                        code
-                        </button>
-                        <div class="modal fade" id="modal-demo-{$index}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item"  data-src="{$chapt}.{$index}/index.html" frameborder="0"></iframe>
+        <div class="container-fluid">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                {foreach $titles as $index => $title}
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-{$index}">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{$index}"  aria-expanded="false" aria-controls="collapse-{$index}">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #{$index} {$title}
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-{$index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{$index}">
+                        <div class="panel-body">
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-{$index}">
+                            demo
+                            </button>
+                            <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-{$index}" href="{$index}.js">
+                            code
+                            </button>
+                            <div class="modal fade" id="modal-demo-{$index}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="{$chapt}.{$index}/index.html" frameborder="0"></iframe>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal fade" id="modal-code-{$index}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                            	<pre><div class="modal-content"></div></pre>
+                            <div class="modal fade" id="modal-code-{$index}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre><div class="modal-content"></div></pre>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>	       
-            {/foreach}
+                {/foreach}
+            </div>
         </div>
         <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         {literal}
         <script>
-            $('.modal').on('show.bs.modal', function () {
-                $(this).find('iframe').each(function(){
-                    this.src = $(this).data('src');
-                });
-            })
+                    $('.modal').on('show.bs.modal', function () {
+                        $(this).find('iframe').each(function(){
+                            this.src = $(this).data('src');
+                        });
+                    })
         </script>
         {/literal}
     </body>

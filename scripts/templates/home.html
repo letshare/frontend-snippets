@@ -8,65 +8,61 @@
         <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     </head>
     <body>
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#js" role="tab" data-toggle="tab">Javascript</a></li>
-                    <li role="presentation"><a href="#css" role="tab" data-toggle="tab">Css</a></li>
-                    <li role="presentation"><a href="#jquery" role="tab" data-toggle="tab">Jquery</a></li>
-                </ul>
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="js">
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            {foreach $js_title_arr as $index => $title}
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading-{$index}">
-                                    <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{$index}"  aria-expanded="false" aria-controls="collapse-{$index}">
-                                    <span class="glyphicon glyphicon-chevron-down"></span> {$title}
-                                    </a>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#modal-js-{$index}"><span class="glyphicon glyphicon-eye-open"></span> detail</button>
-                                    </h4>
-                                </div>
-                                <div class="modal fade" id="modal-js-{$index}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item"  data-src="./js/{$index}/index.html" frameborder="0"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="collapse-{$index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{$index}">
-                                    <div class="panel-body">
-                                        <ul class="list-inline">
-                                            {foreach $js_content_arr[$index] as $subtitle}
-                                            <span class="label label-success" style="line-height:2.5;margin:0 .5em 0 .5em;">{$subtitle}</span>
-                                            {/foreach}
-                                        </ul>
+        <div class="container-fluid">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#js" role="tab" data-toggle="tab">Javascript</a></li>
+                <li role="presentation"><a href="#css" role="tab" data-toggle="tab">Css</a></li>
+                <li role="presentation"><a href="#jquery" role="tab" data-toggle="tab">Jquery</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="js">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        {foreach $js_title_arr as $index => $title}
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading-{$index}">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{$index}"  aria-expanded="false" aria-controls="collapse-{$index}">
+                                <span class="glyphicon glyphicon-chevron-down"></span> {$title}
+                                </a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#modal-js-{$index}"><span class="glyphicon glyphicon-eye-open"></span> detail</button>
+                                </h4>
+                            </div>
+                            <div class="modal fade" id="modal-js-{$index}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="./js/{$index}/index.html" frameborder="0"></iframe>
                                     </div>
                                 </div>
                             </div>
-                            {/foreach}
+                            <div id="collapse-{$index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{$index}">
+                                <div class="panel-body">
+                                        {foreach $js_content_arr[$index] as $subtitle}
+                                        <span class="label label-success" style="font-size:1.1em;line-height:2.5;margin:0 .5em 0 .5em;">{$subtitle}</span>
+                                        {/foreach}
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="css">css未完待续。。。。。。
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="jquery">jquery未完待续。。。。。。
+                        {/foreach}
                     </div>
                 </div>
+                <div role="tabpanel" class="tab-pane" id="css">css未完待续。。。。。。
+                </div>
+                <div role="tabpanel" class="tab-pane" id="jquery">jquery未完待续。。。。。。
+                </div>
             </div>
-        </nav>
+        </div>
         <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         {literal}
         <script>
-            $('.modal').on('show.bs.modal', function () {
-                $(this).find('iframe').each(function(){
-                    this.src = $(this).data('src');
-                });
-            })
+                    $('.modal').on('show.bs.modal', function () {
+                        $(this).find('iframe').each(function(){
+                            this.src = $(this).data('src');
+                        });
+                    })
         </script>
         {/literal}
     </body>
