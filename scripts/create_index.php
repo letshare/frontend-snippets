@@ -1,10 +1,13 @@
 <?php
 //加载模版引擎
 require_once 'smarty3/Smarty.class.php';
+
+define('DIR',__DIR__);
 $tpl = new Smarty();	
-$tpl->template_dir = "templates/";
-$tpl->compile_dir = "templates_c/";
+$tpl->template_dir = DIR."/templates/";
+$tpl->compile_dir = DIR."/templates_c/";
 $tpl->caching =false;
+
 
 $titles2 = array(1=>'去除字符串左右两边的空格',2=>'验证是否输入',3=>'禁止输入',4=>'关闭输入法',5=>'禁止复制与粘贴',
 	6=>'限制只能输入数字',7=>'限制只能输入中文',8=>'限制字符串的长度',9=>'限制字符串的长度',
@@ -72,7 +75,7 @@ foreach ($titles_arr as $index => $titles) {
 	$tpl->assign('chapt',$index);
 	$tpl->assign('titles',$titles);
 	$html = $tpl->fetch('js.html');
-	write_file("../js/{$index}/index.html",$html);
+	write_file(realpath(DIR."/../js/{$index}/index.html"),$html);
 }
 
 
