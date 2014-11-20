@@ -1,205 +1,504 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>第6章 日期处理</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <script type="text/javascript" src="dManage.js"></script>
-    <style>
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>第6章</title>
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-1">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1"  aria-expanded="false" aria-controls="collapse-1">
+                    #1 获取日期的指定部分 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-1">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-1">
+                        demo
+                        </button>
 
-    </style>
-</head>
-<body>
-    <h2>显示当前时间</h2>
-    <p id='nowTime'>时间：</p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-1" href="1.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.1/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-2">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2"  aria-expanded="false" aria-controls="collapse-2">
+                    #2 显示当前时间 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-2">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-2">
+                        demo
+                        </button>
 
-    <h2>显示最后修改时间</h2>
-    失去焦点时间，会修改文本：<input type="text" id='updateContent' /><br />
-    <p id='getLastMTime'>显示最后修改时间：</p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-2" href="2.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.2/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-3">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-3"  aria-expanded="false" aria-controls="collapse-3">
+                    #3 显示最后修改时间 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-3">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-3">
+                        demo
+                        </button>
 
-    <h2>实时显示当前时间</h2>
-    <p id='showNowTime'>时间：</p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-3" href="3.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.3/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-4">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-4"  aria-expanded="false" aria-controls="collapse-4">
+                    #4 实时显示当前时间 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-4">
+                        demo
+                        </button>
 
-    <h2>日期格式化成字符串</h2>
-    <p id='formatTime1'>格式化日期1：</p>
-    <p id='formatTime2'>格式化日期2：</p>
-    <p id='formatTime3'>格式化日期3：</p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-4" href="4.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.4/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-5">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-5"  aria-expanded="false" aria-controls="collapse-5">
+                    #5 日期格式化成字符串 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-5">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-5">
+                        demo
+                        </button>
 
-    <h2>获取短日期格式---即年月日</h2>
-    <p id='getMinDate'>短日期：</p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-5" href="5.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.5/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-6">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-6"  aria-expanded="false" aria-controls="collapse-6">
+                    #6 获取短日期格式 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-6">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-6">
+                        demo
+                        </button>
 
-    <h2>获取指定日期所在月份的天数</h2>
-    <p id='getMonthDays1'>2014年1月：</p>
-    <p id='getMonthDays2'>2014年2月：</p>
-    <p id='getMonthDays3'>2014年3月：</p>
-    <p id='getMonthDays4'>2014年4月：</p>
-    <p id='getMonthDays5'>2014年5月：</p>
-    <p id='getMonthDays6'>2014年6月：</p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-6" href="6.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.6/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-7">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-7"  aria-expanded="false" aria-controls="collapse-7">
+                    #7 获取指定日期所在月份的天数 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-7">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-7">
+                        demo
+                        </button>
 
-    <h2>获取指定日期所在周是第几周</h2>
-    <p id='getHowManyWeeks'></p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-7" href="7.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.7/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-8">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-8"  aria-expanded="false" aria-controls="collapse-8">
+                    #8 获取指定日期所在周是第几周 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-8">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-8">
+                        demo
+                        </button>
 
-    <h2>到指定日期的时间的倒计时</h2>
-    <p id='getCountDown'>2014年2月13日距离现在：</p>
-    <p id='LabourDay'>劳动节距离现在：</p>
-    <p id='NationalDay'>国庆节距离现在：</p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-8" href="8.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.8/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-9">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-9"  aria-expanded="false" aria-controls="collapse-9">
+                    #9 到指定日期时间的倒计时 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-9">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-9">
+                        demo
+                        </button>
 
-    <h2>比较两个日期的差</h2>
-    <p id='getDateDifferenceValue'>2014年6月3日与2014年6月4日差值：<p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-9" href="9.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.9/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-10">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-10"  aria-expanded="false" aria-controls="collapse-10">
+                    #10 比较两个日期的差 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-10">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-10">
+                        demo
+                        </button>
 
-    <h2>日期比较大小</h2>
-    <p id='getDateSize1'>2014年6月3日比2014年6月4日：<p>
-    <p id='getDateSize2'>2014年7月5日比2014年6月4日：<p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-10" href="10.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.10/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-11">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-11"  aria-expanded="false" aria-controls="collapse-11">
+                    #11 日期比较大小 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-11">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-11">
+                        demo
+                        </button>
 
-    <h2>对指定日期进行加减</h2>
-    <p id='setXDate1'>获取当前日期，增加7天：<p>
-    <p id='setXDate2'>获取当前日期，增加7年：<p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-11" href="11.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.11/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-12">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-12"  aria-expanded="false" aria-controls="collapse-12">
+                    #12 对指定日期进行加减 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-12">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-12">
+                        demo
+                        </button>
 
-    <h2>字符串转换为日期格式</h2>
-    <p id='strDate'><p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-12" href="12.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.12/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-13">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-13"  aria-expanded="false" aria-controls="collapse-13">
+                    #13 字符串转换为日期格式 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-13">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-13">
+                        demo
+                        </button>
 
-    <h2>判断日期是闰年还是平年</h2>
-    <p id='getYearType1'><p>
-    <p id='getYearType2'><p>
-    <p id='getYearType3'><p>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-13" href="13.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-13" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.13/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-13" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-14">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-14"  aria-expanded="false" aria-controls="collapse-14">
+                    #14 判断日期是闰年还是平年 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-14">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-14">
+                        demo
+                        </button>
 
-    <h2>日期合法性验证</h2>
-    <p id='verifyDate1'><p>
-    <p id='verifyDate2'><p>
-    <script type="text/javascript">
-		//为了直观方便大家查看  将待测试代码放入当前页
-		; (function (_DM, window, document, undefined) {
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-14" href="14.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-14" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.14/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-14" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                        <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading-15">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-15"  aria-expanded="false" aria-controls="collapse-15">
+                    #15 日期合法性验证 
+                    </a>
+                    </h4>
+                </div>
+                <div id="collapse-15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-15">
+                    <div class="panel-body">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-15">
+                        demo
+                        </button>
 
-            var _W = window,
-				document = _W.document,
-
-                //继承_DM ，区别于原型链继承
-                project = _DM || {};
-                ;
-			//初始化
-			project.init = function () {
-				this.initEvents();
-			}
-
-			//初始化事件
-			project.initEvents = function () {
-                //获取日期的指定部分====================start
-                //获取日期对象
-                var d =new Date();
-                //获取年
-                console.log(d.getFullYear() + "年");
-                //获取月函数默认是0~11 所以要+1
-                console.log((d.getMonth() + 1) + "月");
-                // //获取日
-                console.log(d.getDate() + "日");
-                //获取时
-                console.log(d.getHours() + "时");
-                //获取分
-                console.log(d.getMinutes() + "分");
-                //获取秒
-                console.log(d.getSeconds() + "秒");
-
-
-                //显示当前时间====================start
-                this.getElement("nowTime").innerHTML = "时间：" + this.getNowTime();
-
-                //显示最后修改时间===============start
-                this.getElement("updateContent").onblur = function(){
-                        project.getElement("getLastMTime").innerHTML = "显示最后修改时间：" + project.getNowTime();
-                }
-
-                //实时显示当前时间====================start
-                this.showNowTime(this.getElement("showNowTime"));
-
-                //日期格式化成字符串==================start
-                //待格式化的日期为当前日期，
-                /*
-                字符格式替换规则：“Y”被替换为年，“M”替换为，“D”替换为日期，“h”替换为小时，“m”替换为分钟，“s”替换为秒
-                * */
-                this.dateFormat();
-                this.getElement("formatTime1").innerHTML = "格式化日期1：" + d.format("YYYY-MM-DD h:m:s");
-                this.getElement("formatTime2").innerHTML = "格式化日期2：" + d.format("YYYY/MM/DD h-m-s");
-                this.getElement("formatTime3").innerHTML = "格式化日期3：" + d.format("Y:M:D h:m:s");
-
-                //获取短日期格式====================start
-                this.getElement("getMinDate").innerHTML = this.getMinDate();
-
-                //获取指定日期所在月份的天数====================start
-                this.getElement("getMonthDays1").innerHTML = "2014年1月：" + this.getMonthDays("2014", "1") +"天";
-                this.getElement("getMonthDays2").innerHTML = "2014年2月：" + this.getMonthDays("2014", "2") +"天";
-                this.getElement("getMonthDays3").innerHTML = "2014年3月：" + this.getMonthDays("2014", "3") +"天";
-                this.getElement("getMonthDays4").innerHTML = "2014年4月：" + this.getMonthDays("2014", "4") +"天";
-                this.getElement("getMonthDays5").innerHTML = "2014年5月：" + this.getMonthDays("2014", "5") +"天";
-                this.getElement("getMonthDays6").innerHTML = "2014年6月：" + this.getMonthDays("2014", "6") +"天";
-
-                //获取指定日期所在周是第几周=========================start
-                this.getElement("getHowManyWeeks").innerHTML = "第" + this.getHowManyWeeks("2014", "1", "6") +"周";
-
-                //到指定日期的时间的倒计时=========================================start
-                this.getElement("getCountDown").innerHTML = "2014年2月14日距离现在：" + this.getCountDown("2014", "2", "14") +"天";
-
-                //节日倒计时====================start
-                this.getElement("LabourDay").innerHTML = "劳动节距离现在：" + this.getCountDown("2014", "5", "1") +"天";
-                this.getElement("NationalDay").innerHTML = "国庆节距离现在：" + this.getCountDown("2014", "10", "1") +"天";
-
-                //比较两个日期的差====================start
-                this.getElement("getDateDifferenceValue").innerHTML = "2014年6月3日与2014年6月4日差值" + this.getDateDifferenceValue(
-                        {
-                            "Y":"2014",
-                            "M":"6",
-                            "D":"3"
-                        },
-                        {
-                            "Y":"2014",
-                            "M":"6",
-                            "D":"4"
-                        }) + "秒";
-
-                //日期比较大小===============start
-                this.getElement("getDateSize1").innerHTML = "2014年6月3日比2014年6月4日：" + (this.getDateSize(
-                        {
-                            "Y":"2014",
-                            "M":"6",
-                            "D":"3"
-                        },
-                        {
-                            "Y":"2014",
-                            "M":"6",
-                            "D":"4"
-                        }) ? "大" : "小");
-
-                this.getElement("getDateSize2").innerHTML = "2014年7月5日比2014年6月4日：" + (this.getDateSize(
-                        {
-                            "Y":"2014",
-                            "M":"7",
-                            "D":"5"
-                        },
-                        {
-                            "Y":"2014",
-                            "M":"6",
-                            "D":"4"
-                        }) ? "大" : "小");
-
-                //对指定日期进行加减=======================start
-                this.getElement("setXDate1").innerHTML = "获取当前日期，增加7天：" + this.setXDate(d, 0 , 0, 7);
-                this.getElement("setXDate2").innerHTML = "获取当前日期，增加7年：" + this.setXDate(d, 7);
-
-                //字符串转换为日期格式=================start
-                this.getElement("strDate").innerHTML = "2014-02-19 15:56:01转换为日期格式：" + this.strDate("2014-02-19 15:56:01");
-
-                //判断日期是闰年还是平年===================start
-                this.getElement("getYearType1").innerHTML = "2014年为" + this.getYearType("2014");
-                this.getElement("getYearType2").innerHTML = "2000年为" + this.getYearType("2000");
-                this.getElement("getYearType3").innerHTML = "2011年为" + this.getYearType("2011");
-
-                //日期合法性验证=============start
-                this.getElement("verifyDate1").innerHTML = "2021-02-19 16:21:51的日期格式：" + (this.verifyDate("2021-02-19 16:21:51") ? "正确":"错误");
-                this.getElement("verifyDate2").innerHTML = "2021-02-19的日期格式：" + (this.verifyDate("2021-02-19") ? "正确":"错误");
-
-            }
-
-			window.onload = function(){
-                project.init();
-            };
-		})(dManage , window, document);
-	</script>
-</body>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-15" href="15.js">
+                        code
+                        </button>
+                        <div class="modal fade" id="modal-demo-15" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                <iframe data-src="6.15/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal-code-15" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            	<pre><div class="modal-content"></div></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	       
+                    </div>
+        <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        
+        <script>
+            $('.modal').on('show.bs.modal', function () {
+                $(this).find('iframe').each(function(){
+                    this.src = $(this).data('src');
+                });
+            })
+        </script>
+        
+    </body>
 </html>
