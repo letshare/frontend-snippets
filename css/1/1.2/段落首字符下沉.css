@@ -1,0 +1,22 @@
+
+  #a{text-indent:15px;}
+  #b{text-indent:-6px;}
+  #c{text-indent:0.5em;}
+  #a:first-letter{
+  font-size:25px;
+  color:#B23AEE;
+  float:left;
+  }
+  #b:first-letter{
+  font-size:30px;
+  color:red;
+  }
+  #c:first-letter{
+  font-size:25px;
+  color:#B23AEE;
+  }
+  p.uppercase:first-letter 
+  {
+  text-transform:uppercase;
+  }
+  

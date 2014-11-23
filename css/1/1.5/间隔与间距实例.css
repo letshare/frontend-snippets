@@ -1,0 +1,18 @@
+
+  p.wordspacing{word-spacing:20px;}
+/*  设置空格的长度*/
+  p.letterspacing{letter-spacing:20px;}
+/*  设置字间距*/
+  p.lineheight{line-height:0.3;}
+/*  设置行间距*/
+  p.whitespace_normal{white-space:normal;}
+/*  默认，忽略多个空格为1个，忽略回车符*/
+  p.whitespace_pre{white-space:pre;}
+/*  保留多个空格*/
+  p.whitespace_nowrap{white-space:nowrap;}
+/*  忽略回车符，禁止换行，直到遇到br*/
+  p.whitespace_prewrap{white-space:pre-wrap;}
+/*  保留所有空格符与回车符*/
+  p.whitespace_preline{white-space:pre-line;}
+/*  忽略多个空格为1个，保留回车*/
+  

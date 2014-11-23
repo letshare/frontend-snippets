@@ -1,0 +1,9 @@
+
+
+#awesome .favorite:not(#awesome) .highlight {
+    color: red;
+}
+#awesome .highlight:nth-of-type(1):nth-last-of-type(1) {
+    color: blue;
+}
+

@@ -1,0 +1,15 @@
+
+
+.item {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+#item1 {
+    margin-left: 0;
+}
+#item2 {
+    margin-left: 200px;
+}
+

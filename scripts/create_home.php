@@ -72,8 +72,18 @@ $js_title_arr = array(2=>'输入、单选复选框、下拉框、上传文件',3
 
 $js_content_arr = array(2=>$titles2,3=>$titles3,4=>$titles4,5=>$titles5,6=>$titles6,7=>$titles7,8=>$titles8,9=>$titles9);
 
+$css_title_arr = array(1=>'文字与字体',2=>'边框和图片',3=>'按钮和链接',4=>'背景和颜色',
+	5=>'变换与动画',6=>'页面的布局',7=>'美化与装饰',8=>'盒子',9=>'3D相关',10=>'CSSHack',11=>'其他常用代码');
+
+$css_data = file_get_contents('./cssData.json');
+$css_content_arr = json_decode($css_data );
+
 $tpl->assign('js_title_arr',$js_title_arr);
 $tpl->assign('js_content_arr',$js_content_arr);
+
+$tpl->assign('css_title_arr',$css_title_arr);
+$tpl->assign('css_content_arr',$css_content_arr);
+
 $html = $tpl->fetch('home.html');
 write_file(realpath(DIR."/../index.html"),$html);
 

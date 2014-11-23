@@ -1,0 +1,18 @@
+
+*{margin:0;padding:0;}
+li{
+	list-style:none;
+	float:left;
+	width:10px;
+	overflow:hidden;
+	border:1px solid;
+	transition:all .1s;
+	-webkit-transition:all .1s;
+	-moz-transition:all .1s;
+	-o-transition:all .1s;
+	cursor:pointer;
+}
+.on{width:500px;}
+ul:hover li{width:10px;}
+ul li:hover{width:500px;}
+  

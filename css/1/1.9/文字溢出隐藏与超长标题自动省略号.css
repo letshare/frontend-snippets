@@ -1,0 +1,34 @@
+
+  div.elli{
+border:1px solid;
+overflow:hidden; /*超出部分隐藏*/
+white-space:nowrap;/*强制在一行显示*/
+text-overflow:ellipsis;
+width:200px;
+height:20px;
+}
+  div.clip
+{
+border:1px solid;
+overflow:hidden; /*超出部分隐藏*/
+white-space:nowrap;/*强制在一行显示*/
+text-overflow:clip;
+width:200px;
+height:20px;
+}
+div.hide
+{
+   overflow:hidden;
+   border:1px solid;
+   width:200px;
+   height:50px;
+}
+div.scroll
+{
+   overflow:scroll;
+   border:1px solid;
+   width:200px;
+   height:50px;
+}
+
+  

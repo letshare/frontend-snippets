@@ -1,0 +1,127 @@
+
+fieldset, img {
+    border: 0;
+}
+em {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+.required {
+    color: #e90000;
+    width: 20px;
+    display: inline-block;
+    height: 12px;
+    line-height: 12px;
+    overflow: hidden;
+}
+.label {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 185px;
+    text-align: right;
+    height: 32px;
+    line-height: 32px;
+}
+.input-text {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 225px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 6px 3px;
+    border: 1px solid #bababa;
+    box-shadow: 0 0 3px #e6e6e6 inset;
+    border-radius: 3px;
+    outline: 0;
+}
+.input-text:hover {
+    border-color: #666666;
+}
+.input-text:focus {
+    border-color: #0092d2;
+}
+.input-select {
+    border: 1px solid #bababa;
+    padding: 4px 5px 4px 3px;
+    height: 30px;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 13px;
+    width: 233px;
+    border-radius: 3px;
+    outline: 0;
+}
+.input-select:hover {
+    border-color: #666666;
+}
+.input-select:focus {
+    border-color: #0092d2;
+}
+.mod .hd {
+    font-size: 16px;
+    font-weight: bold;
+    color: #404040;
+    font-family: "Microsoft YaHei";
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    border-bottom: 2px solid #0092d2;
+    padding-bottom: 6px;
+}
+.mod-contacter {
+  padding: 20px;
+  padding-bottom: 1px;
+  *margin-bottom: -3px;
+}
+.mod-contacter li {
+  padding: 7px 0;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+}
+.mod-contacter .contacter-info, .mod-contacter .invoice {
+  padding: 22px 0 18px 0;
+}
+.mod-contacter .contacter-info {
+  padding-top: 8px;
+  padding-bottom: 3px;
+}
+.mod-contacter .contacter-info .label, .mod-contacter .contacter-info .verify-wrap, .mod-contacter .contacter-info .required {
+  float: left;
+  _display: inline;
+}
+.mod-contacter .contacter-info .required {
+  margin-top: 12px;
+}
+.mod-contacter .contacter-info .placeholder {
+  *display: inline !important;
+}
+.mod-contacter .contacter-info .placeholder label {
+  height: 32px;
+  line-height: 35px;
+}
+.mod-contacter .contacter-info .verify-wrap-error {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding-right: 30px;
+  background-position: 245px 9px;
+}
+.mod-contacter .save-relation-list {
+  line-height: 14px;
+  padding: 0 0 4px 0;
+}
+.mod-contacter .save-relation-label {
+  display: inline-block;
+  cursor: pointer;
+}
+.mod-contacter .save-relation {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+

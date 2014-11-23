@@ -1,0 +1,12 @@
+
+h1{
+text-indent:-9999px;
+margin:0 auto;width:490px;height:200px;
+background:url("img/baidu.jpg") no-repeat;
+}
+.screen-reader-text {
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+  

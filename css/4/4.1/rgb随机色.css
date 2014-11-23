@@ -1,0 +1,22 @@
+
+  #div1{
+  height:100px;width:100px;margin:10px auto;background:red;
+  }
+  
+/*
+
+ function color(){
+ var r=parseInt(Math.random()*255);
+ var g=parseInt(Math.random()*255);
+ var b=parseInt(Math.random()*255);
+ var newcolor="rgb("+r+","+g+","+b+")";
+ return newcolor;
+ }
+ window.onload =function (){
+ var odiv=document.getElementById('div1');
+ setInterval (function (){ 
+	 var c=color();
+	 odiv.style.backgroundColor=c;
+ },50);
+ }
+   */

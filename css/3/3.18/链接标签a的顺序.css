@@ -1,0 +1,32 @@
+
+        a:link {
+        　　color: #0000FF;
+        　　text-decoration: underline;
+        　　font-weight: normal;
+        　　font-style: normal;
+        }
+
+        a:visited {
+        　　color: #3399FF;
+        　　text-decoration: underline;
+        　　background-color: #FFFFFF;
+        　　font-weight: normal;
+        　　font-style: italic;
+        }
+
+        a:hover {
+        　　color: #0000FF;
+        　　text-decoration: underline;
+        　　background-color: #FFFF00;
+        　　font-weight: bold;
+        　　font-style: normal;
+        }
+
+        a:active {
+        　　color: #FF0000;
+        　　text-decoration: none;
+        　　background-color: #CCCCCC;
+        　　font-weight: bold;
+        　　font-style: normal;
+        }
+        

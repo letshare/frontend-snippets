@@ -1,0 +1,15 @@
+
+
+body {
+    margin: 0;
+}
+
+#mydiv {
+    width: 500px;
+    height: 200px;
+    margin-left: 50px;
+    /*-moz-box-shadow: inset 2px 0 4px #000;*/
+    -webkit-box-shadow: inset 2px 3px 4px 10px #000;
+    /*box-shadow: inset 2px 0 4px #000;*/
+}
+

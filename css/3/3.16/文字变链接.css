@@ -1,0 +1,3 @@
+
+a, div:hover span { display: none; }
+div:hover a { display: inline-block; }

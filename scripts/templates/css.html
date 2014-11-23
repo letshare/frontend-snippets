@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>第{$chapt}章</title>
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                {foreach $titles as $index => $title_arr}
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-{$index}">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{$index}"  aria-expanded="false" aria-controls="collapse-{$index}">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #{$index} {implode('、',$title_arr)}
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-{$index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{$index}">
+                        <div class="panel-body">
+                            {foreach $title_arr as $tindex => $title}
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-{$index}-{$tindex}">
+                            {$title}<span class="badge">demo</span>
+                            </button>
+                            {/foreach}
+
+                            {foreach $title_arr as $tindex => $title}
+                            <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-{$index}-{$tindex}" href="{$chapt}.{$index}/{$title}.css">
+                            {$title}<span class="badge">css</span>
+                            </button>
+                            {/foreach}
+
+                            {foreach $title_arr as $tindex => $title}
+                            <div class="modal fade" id="modal-demo-{$index}-{$tindex}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="{$chapt}.{$index}/{$title}.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            {/foreach}
+                            
+                            {foreach $title_arr as $tindex => $title}
+                            <div class="modal fade" id="modal-code-{$index}-{$tindex}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            {/foreach}
+
+                        </div>
+                    </div>
+                </div>
+                {/foreach}
+            </div>
+        </div>
+        <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        {literal}
+        <script>
+                    $('.modal').on('show.bs.modal', function () {
+                        $(this).find('iframe').each(function(){
+                            this.src = $(this).data('src');
+                        });
+                    })
+        </script>
+        <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F898f1edef336abc9b9fd81a6e1144a65' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        {/literal}
+    </body>
+</html>

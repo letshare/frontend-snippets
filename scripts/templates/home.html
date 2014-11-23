@@ -3,18 +3,29 @@
     <head>
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="Code : code library">
-        <title>Code</title>
+        <meta name="description" content="js常用代码,css常用代码,jquery常用代码,js面试题库,css面试题库,jquery面试题库">
+        <title>js&css&jqeury Code</title>
         <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container-fluid">
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
+            <ul class="nav nav-tabs navbar-fixed-top navbar-inverse" role="tablist">
+                <li role="presentation" ><a href="http://www.xuntuu.com" title="首页" target="_blank"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
                 <li role="presentation" class="active"><a href="#js" role="tab" data-toggle="tab">Javascript</a></li>
                 <li role="presentation"><a href="#css" role="tab" data-toggle="tab">Css</a></li>
                 <li role="presentation"><a href="#jquery" role="tab" data-toggle="tab">Jquery</a></li>
+                <li role="presentation" ><a href="https://github.com/letshare/code" title="GitHub" target="_blank">GitHub</a></li>
             </ul>
+            <a href="https://github.com/letshare/code"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 2000" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+            <header class="jumbotron subhead">
+                <div class="container">
+                    <h2><a href="./index.html">前端代码库</a></h2>
+                    <p class="lead"><a href="./index.html">js、css、jquery常用代码</a></p>
+                </div>
+            </header>
+
             <!-- Tab panes -->
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="js">
@@ -37,33 +48,69 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="collapse-{$index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{$index}">
+                            <div id="collapse-{$index}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-{$index}">
                                 <div class="panel-body">
-                                        {foreach $js_content_arr[$index] as $subtitle}
-                                        <span class="label label-success" style="font-size:1.1em;line-height:2.5;margin:0 .5em 0 .5em;">{$subtitle}</span>
-                                        {/foreach}
+                                    {foreach $js_content_arr[$index] as $subtitle}
+                                    <span class="label label-success" style="font-size:1.1em;line-height:2.5;margin:0 .5em 0 .5em;">{$subtitle}</span>
+                                    {/foreach}
                                 </div>
                             </div>
                         </div>
                         {/foreach}
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="css">css未完待续。。。。。。
+                <div role="tabpanel" class="tab-pane" id="css">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        {foreach $css_title_arr as $index => $title}
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading-css-{$index}">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-css-{$index}"  aria-expanded="false" aria-controls="collapse-css-{$index}">
+                                <span class="glyphicon glyphicon-chevron-down"></span> {$title}
+                                </a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#modal-css-{$index}"><span class="glyphicon glyphicon-eye-open"></span> detail</button>
+                                </h4>
+                            </div>
+                            <div class="modal fade" id="modal-css-{$index}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="./css/{$index}/index.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapse-css-{$index}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-css-{$index}">
+                                <div class="panel-body">
+                                    {foreach $css_content_arr->$index as $subtitle}
+                                    <span class="label label-success" style="font-size:1.1em;line-height:2.5;margin:0 .5em 0 .5em;">{implode('、',$subtitle)}</span>
+                                    {/foreach}
+                                </div>
+                            </div>
+                        </div>
+                        {/foreach}
+                    </div>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="jquery">jquery未完待续。。。。。。
                 </div>
             </div>
+            <div id="site-navbar" style="position: absolute; top: -4px; left: -3px; border: 0; z-index: 2000;padding:0;margin:0;"><a href="http://www.xuntuu.com" title="返回首页" style="background:none;"><img src="images/return-back.png" style="padding:0;margin:0;border:0; -webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;"></a></div>
         </div>
         <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         {literal}
         <script>
-                    $('.modal').on('show.bs.modal', function () {
-                        $(this).find('iframe').each(function(){
-                            this.src = $(this).data('src');
-                        });
-                    })
+                            $('.modal').on('show.bs.modal', function () {
+                                $(this).find('iframe').each(function(){
+                                    this.src = $(this).data('src');
+                                });
+                            })
         </script>
+
+        <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F898f1edef336abc9b9fd81a6e1144a65' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+
         {/literal}
     </body>
 </html>

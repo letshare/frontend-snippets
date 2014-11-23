@@ -1,0 +1,37 @@
+
+  #share{width:500px;margin:50px;}
+  #share_button{position:absolute;display:none;}
+  
+/*
+
+  window.onload=function(){
+  function select(){//获取到选中的文字函数
+  return document.selection?document.selection.createRange().text:window.getSelection().toString();//IE与标准
+  }
+  var text=document.getElementById('share');
+  var sharebutton=document.getElementById('share_button');
+  text.onmouseup=function (){
+  var ev=ev||window.event;
+  var l=document.body.scrollLeft>0?document.body.scrollLeft:document.documentElement.scrollLeft;
+  var t=document.body.scrollTop>0?document.body.scrollTop:document.documentElement.scrollTop;
+  l+=ev.clientX;//计算分享按钮的left值
+  t+=ev.clientY;//计算分享按钮的top值
+  if(select().length>10){
+	  setTimeout(function (){//解决IE下文本选中不正确的问题
+		  share_button.style.display='block';
+		  share_button.style.left=l+'px';
+		  share_button.style.top=t+'px';	  
+	  },100);
+  }else{
+  share_button.style.display='none';//小于10个字不分享
+  }
+  document.onclick=function (){//点击页面
+  share_button.style.display='none';//分享按钮消失
+  }
+  text.onclick=function (){//点击文本时阻止document.onclick
+  var ev=ev||window.event;
+  ev.cacelBubble=true;
+  }
+  share_button.onclick=function (){//http请求分享到新浪微博
+  window.location.href="http://service.weibo.com/share/share.php?title="+select()+"&url="+window.location.href;}}}
+    */

@@ -1,0 +1,15 @@
+
+		html, body { margin: 0;	padding: 0; }
+		body { background: #f2f2f2 url(img/bg.png) no-repeat top center; padding-top: 265px; }
+		.mejs-container { margin: 0 auto; }
+	
+/*
+
+	$(document).ready(function() {
+		$('video').mediaelementplayer({
+			alwaysShowControls: false,
+			videoVolume: 'horizontal',
+			features: ['playpause','progress','volume','fullscreen']
+		});
+	});
+	  */

@@ -1,0 +1,10 @@
+
+div{width:100px;height:100px;background:red;position:absolute;left:0;top:0;}
+  
+/*
+
+  window.onload=function (){
+  var odiv=document.getElementsByTagName('div')[0];
+  move(odiv,{top:[200]},"flex");
+  }
+    */

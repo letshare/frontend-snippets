@@ -1,0 +1,57 @@
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: 'Whitney Cond A', 'Whitney Cond B', "ronnia-condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.1;
+}
+h3, .h3 {
+    font-size: 36px;
+    margin-top: 50px;
+}
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-style: italic;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+/*
+blockquote{
+background: #d9e9ff; /×背景颜色×/
+padding: 10px 15px 10px 15px; /×引用块内部文字距离边框的距离×/
+margin: 1em 3em 1em 3em; /×引用快边框上右下左的缩进×/
+font-size:.8em;/×字体大小×/
+border-style:dotted dotted dotted solid; /×边框样式×/
+border-width:1px 1px 1px 5px;/×边框宽度×/
+border-color:#5bbcdd; /×边框颜色×/
+line-height:200% /×行间距×/
+}
+pre {
+background: #d9e9ff; /×背景颜色×/
+padding: 0.75em 0.75em; /×内部文字距离边框的距离×/
+margin: 1em 3em 1em 3em; /×边框上右下左的缩进×/
+font-size:.8em; /×字体大小×/
+overflow: auto; /×如有超出边框长度的代码，显示滚动条×/
+border-style:dotted dotted dotted solid;/×边框样式×/
+border-width:1px 1px 1px 5px;/×边框宽度×/
+border-color:#5bbcdd;/×边框颜色×/
+line-height:200% /×行间距×/
+}*/

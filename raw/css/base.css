@@ -1,0 +1,22 @@
+
+/*字体设置*/
+body{
+	font-family:STHeiti,simsun,Arial,sans-serif;   /* 宋体（根据需求使用，如果是中文网页则推荐写到body里）*/
+	font-family:STHeiti,'Microsoft Yahei',Simhei,Arial,sans-serif; /* 雅黑 */
+	font-family:STHeiti,Simhei,Arial,sans-serif;  /* 黑体 */
+}
+
+
+/*使用图片作为列表标记*/
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    background-image: url(sqpurple.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 5px; 
+    padding-left: 14px; 
+}

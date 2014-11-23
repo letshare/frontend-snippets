@@ -1,0 +1,15 @@
+
+label{
+  padding: 5px 0 0 45px;
+}
+
+.vertical-container {
+  display: -webkit-flex;
+  display: flex;
+  height: 300px;
+}
+.vertically-centered {
+  margin: auto;
+}
+
+  

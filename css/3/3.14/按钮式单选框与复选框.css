@@ -1,0 +1,48 @@
+
+  .radioEnable{
+  width:50px;height:20px;
+  border-radius:5px 0 0 5px/5px 0 0 5px ;
+  float:left;text-align:center;
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-bottom:1px solid black;
+  }
+  .radioDisable{
+  width:50px;height:20px;
+  border-radius:0 5px 5px 0/0 5px 5px 0 ;
+  float:left;text-align:center;
+  border-top:1px solid black;
+  border-right:1px solid black;
+  border-bottom:1px solid black;
+  }
+  .radioEnable.enable{
+  background:#71C671;color:#fff;
+  }
+  .radioDisable.enable{
+  background:#C1C1C1;color:#fff;
+  }
+  input{display:none;}
+  
+/*
+
+  $(function(){
+	  $(".radioEnable").click(function(){//单选启用按钮被点击
+	  $(this).parent('div').children(".radioDisable").removeClass('enable');//禁用按钮去除选中状态
+	  $(this).addClass('enable');//启用按钮选中
+	  });
+	  $(".radioDisable").click(function(){//单选禁用按钮被点击
+	  $(this).parent('div').children(".radioEnable").removeClass('enable');//启用按钮去除选中状态
+	  $(this).addClass('enable');//禁用按钮选中
+	  });
+	  $(".cbEn").click(function(){//复选启用按钮被点击
+	  $(this).parent('p').children(".radioDisable").removeClass('enable');//禁用按钮去除选中状态
+	  $(this).addClass('enable');//启用按钮选中
+	  $(this).parent('p').children('input').prop('checked',true);//input属性值选中
+	  });
+	  $(".cbDis").click(function(){//复选禁用按钮被点击
+      $(this).parent('p').children(".radioEnable").removeClass('enable');//启用按钮去除选中状态
+	  $(this).addClass('enable');//禁用按钮选中
+	  $(this).parent('p').children('input').prop('checked',false);//input属性值去除选中
+	  });
+  });
+    */

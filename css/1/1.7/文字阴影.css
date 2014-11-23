@@ -1,0 +1,18 @@
+
+h1
+{
+text-shadow: 5px 5px 5px #6600ff;
+}
+div
+{
+text-outline: thickness blur color;
+color:#ABABAB;
+text-shadow: 2px 2px 2px 2px #ABABAB,25px 25px 5px 5px #ABABAB;
+opacity:0.5;
+}
+div:hover
+{
+color:#000000;
+opacity:1;
+text-shadow: 0px 0px 0px #ABABAB;
+}

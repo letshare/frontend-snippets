@@ -1,0 +1,35 @@
+
+div.example{background-color: #cee;}
+
+.has-pullquote:before {
+    /* 重置矩形 */
+    padding: 0;
+    border: none;
+    /* Content */
+    content: attr(data-pullquote);
+    /* 居右 基于模块化的引文 */
+    float: right;
+    width: 320px;
+    margin: 12px -140px 24px 36px;
+    /* Baseline 矫正 */
+    position: relative;
+    top: 5px;
+    /* 排版 (30px line-height = 25% incremental leading) */
+    font-size: 23px;
+    line-height: 30px;
+}
+.pullquote-adelle:before {
+    font-family: "adelle-1", "adelle-2";
+    font-weight: 100;
+    top: 10px !important;
+}
+.pullquote-helvetica:before {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    top: 7px !important;
+}
+.pullquote-facit:before {
+    font-family: "facitweb-1", "facitweb-2", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    top: 7px !important;
+}

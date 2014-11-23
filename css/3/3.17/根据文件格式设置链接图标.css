@@ -1,0 +1,66 @@
+
+a[href^="http:"] {
+		display:inline-block;
+		padding-left:20px;
+		background:transparent url("img/url.gif") center left no-repeat;
+}
+a[href^="mailto:"] {
+		display:inline-block;
+		padding-left:20px;
+		line-height:18px;
+		background:transparent url("img/email.png") center left no-repeat;
+}
+a[href$='.pdf'] {
+		display:inline-block;
+		padding-left:20px;
+		line-height:18px;
+		background:transparent url("img/pdf.gif") center left no-repeat;
+}
+a[href$='.swf'], a[href$='.fla'], a[href$='.swd'] {
+		display:inline-block;
+		padding-left:20px;
+		line-height:18px;
+		background:transparent url("img/swf.gif") center left no-repeat;
+}
+a[href$='.xls'], a[href$='.csv'], a[href$='.xlt'], a[href$='.xlw'] {
+		display:inline-block;
+		padding-left:20px;
+		line-height:18px;
+		background:transparent url("img/xls.gif") center left no-repeat;
+}
+a[href$='.ppt'], a[href$='.pps'] {
+		display:inline-block;
+		padding-left:20px;
+		line-height:18px;
+		background:transparent url("img/ppt.gif") center left no-repeat;
+}
+a[href$='.doc'], a[href$='.rtf'], a[href$='.wps'] {
+		display:inline-block;
+		padding-left:20px;
+		line-height:18px;
+		background:transparent url("img/wps.gif") center left no-repeat;
+}
+a[href$='.txt']{
+		display:inline-block;
+		padding-left:20px;
+		line-height:18px;
+		background:transparent url("img/txt.gif") center left no-repeat;
+}
+a[href$='.zip'], a[href$='.gzip'], a[href$='.rar'] {
+		display:inline-block;
+		padding-left:20px;
+		line-height:18px;
+		background:transparent url("img/rar.gif") center left no-repeat;
+}
+a[href$='.mov'] {
+		padding-left: 20px;
+		background: url("img/video.png") no-repeat left;
+	}
+a[href$='.rss'], a[href$='.atom'] { 
+	padding-left: 20px;
+	background: url("img/rss.png") no-repeat left;
+}	
+a[href *="username"] {
+	padding-left: 20px;
+	background: url("img/star.png") no-repeat left;
+}

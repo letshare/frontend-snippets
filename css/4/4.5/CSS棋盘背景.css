@@ -1,0 +1,14 @@
+
+  body {
+  	background-image: linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0), 
+    linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+    background-image: -webkit-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0), 
+    -webkit-linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+	background-image: -moz-linear-gradient(45deg, #E1DEB0 24%, transparent 24%, transparent 76%, #E1DEB0 76%, #E1DEB0), 
+    -moz-linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+    background-image: -o-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0), 
+    -o-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+}
+  

@@ -1,0 +1,18 @@
+
+  div
+  {
+  width:300px;
+  height:150px;
+  background-image:url(4.jpg);
+  background-size:100%;
+  position:relative;
+  display:inline-block;
+  }
+  .shui
+  {
+  position:absolute;
+  bottom:0;
+  right:0;
+  opacity:0.5;
+  }
+  

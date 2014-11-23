@@ -1,0 +1,14 @@
+
+div.example{background-color: #cee;}
+
+
+@media all and (min-width: 640px) {
+    div.example {
+        background-color: #cff;
+    }
+}
+@media screen and (max-width: 1100px) {
+    div.example {
+        background-color: #c00;
+    }
+}

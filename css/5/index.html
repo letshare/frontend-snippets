@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>第5章</title>
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-1">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1"  aria-expanded="false" aria-controls="collapse-1">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #1 CSS3动画、CSS3变形、CSS3转换
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-1">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-1-0">
+                            CSS3动画<span class="badge">demo</span>
+                            </button>
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-1-1">
+                            CSS3变形<span class="badge">demo</span>
+                            </button>
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-1-2">
+                            CSS3转换<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-1-0" href="5.1/CSS3动画.css">
+                            CSS3动画<span class="badge">css</span>
+                            </button>
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-1-1" href="5.1/CSS3变形.css">
+                            CSS3变形<span class="badge">css</span>
+                            </button>
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-1-2" href="5.1/CSS3转换.css">
+                            CSS3转换<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-1-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.1/CSS3动画.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-demo-1-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.1/CSS3变形.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-demo-1-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.1/CSS3转换.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-1-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-code-1-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-code-1-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-2">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2"  aria-expanded="false" aria-controls="collapse-2">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #2 纸张边角稍稍卷起、纸张边角翻折、纸张边角翻折立体感强
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-2">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-2-0">
+                            纸张边角稍稍卷起<span class="badge">demo</span>
+                            </button>
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-2-1">
+                            纸张边角翻折<span class="badge">demo</span>
+                            </button>
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-2-2">
+                            纸张边角翻折立体感强<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-2-0" href="5.2/纸张边角稍稍卷起.css">
+                            纸张边角稍稍卷起<span class="badge">css</span>
+                            </button>
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-2-1" href="5.2/纸张边角翻折.css">
+                            纸张边角翻折<span class="badge">css</span>
+                            </button>
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-2-2" href="5.2/纸张边角翻折立体感强.css">
+                            纸张边角翻折立体感强<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-2-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.2/纸张边角稍稍卷起.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-demo-2-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.2/纸张边角翻折.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-demo-2-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.2/纸张边角翻折立体感强.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-2-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-code-2-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-code-2-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-3">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-3"  aria-expanded="false" aria-controls="collapse-3">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #3 冒泡提示
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-3">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-3-0">
+                            冒泡提示<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-3-0" href="5.3/冒泡提示.css">
+                            冒泡提示<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-3-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.3/冒泡提示.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-3-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-4">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-4"  aria-expanded="false" aria-controls="collapse-4">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #4 对联广告
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-4-0">
+                            对联广告<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-4-0" href="5.4/对联广告.css">
+                            对联广告<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-4-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.4/对联广告.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-4-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-5">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-5"  aria-expanded="false" aria-controls="collapse-5">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #5 页面loading
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-5">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-5-0">
+                            页面loading<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-5-0" href="5.5/页面loading.css">
+                            页面loading<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-5-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.5/页面loading.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-5-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-6">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-6"  aria-expanded="false" aria-controls="collapse-6">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #6 进度条
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-6">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-6-0">
+                            进度条<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-6-0" href="5.6/进度条.css">
+                            进度条<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-6-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.6/进度条.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-6-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-7">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-7"  aria-expanded="false" aria-controls="collapse-7">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #7 图标滑动切换CSS3
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-7">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-7-0">
+                            图标滑动切换CSS3<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-7-0" href="5.7/图标滑动切换CSS3.css">
+                            图标滑动切换CSS3<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-7-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.7/图标滑动切换CSS3.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-7-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-8">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-8"  aria-expanded="false" aria-controls="collapse-8">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #8 图片尺寸测量、流星划过效果
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-8">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-8-0">
+                            图片尺寸测量<span class="badge">demo</span>
+                            </button>
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-8-1">
+                            流星划过效果<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-8-0" href="5.8/图片尺寸测量.css">
+                            图片尺寸测量<span class="badge">css</span>
+                            </button>
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-8-1" href="5.8/流星划过效果.css">
+                            流星划过效果<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-8-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.8/图片尺寸测量.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-demo-8-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.8/流星划过效果.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-8-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-code-8-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-9">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-9"  aria-expanded="false" aria-controls="collapse-9">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #9 雪花飘落效果
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-9">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-9-0">
+                            雪花飘落效果<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-9-0" href="5.9/雪花飘落效果.css">
+                            雪花飘落效果<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-9-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.9/雪花飘落效果.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-9-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-10">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-10"  aria-expanded="false" aria-controls="collapse-10">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #10 数字滚动器
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-10">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-10-0">
+                            数字滚动器<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-10-0" href="5.10/数字滚动器.css">
+                            数字滚动器<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-10-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.10/数字滚动器.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-10-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-11">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-11"  aria-expanded="false" aria-controls="collapse-11">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #11 模拟时钟、电子时钟
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-11">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-11-0">
+                            模拟时钟<span class="badge">demo</span>
+                            </button>
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-11-1">
+                            电子时钟<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-11-0" href="5.11/模拟时钟.css">
+                            模拟时钟<span class="badge">css</span>
+                            </button>
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-11-1" href="5.11/电子时钟.css">
+                            电子时钟<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-11-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.11/模拟时钟.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-demo-11-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.11/电子时钟.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-11-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-code-11-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-12">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-12"  aria-expanded="false" aria-controls="collapse-12">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #12 DOCK栏
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-12">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-12-0">
+                            DOCK栏<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-12-0" href="5.12/DOCK栏.css">
+                            DOCK栏<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-12-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.12/DOCK栏.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-12-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-13">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-13"  aria-expanded="false" aria-controls="collapse-13">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #13 测试运动框架、苹果系统stack
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-13">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-13-0">
+                            测试运动框架<span class="badge">demo</span>
+                            </button>
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-13-1">
+                            苹果系统stack<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-13-0" href="5.13/测试运动框架.css">
+                            测试运动框架<span class="badge">css</span>
+                            </button>
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-13-1" href="5.13/苹果系统stack.css">
+                            苹果系统stack<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-13-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.13/测试运动框架.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-demo-13-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.13/苹果系统stack.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-13-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-code-13-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-14">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-14"  aria-expanded="false" aria-controls="collapse-14">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #14 扇形展开
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-14">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-14-0">
+                            扇形展开<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-14-0" href="5.14/扇形展开.css">
+                            扇形展开<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-14-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.14/扇形展开.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-14-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-15">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-15"  aria-expanded="false" aria-controls="collapse-15">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #15 回顶部
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-15">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-15-0">
+                            回顶部<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-15-0" href="5.15/回顶部.css">
+                            回顶部<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-15-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.15/回顶部.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-15-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-16">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-16"  aria-expanded="false" aria-controls="collapse-16">
+                        <span class="glyphicon glyphicon-chevron-down"></span> #16 拖拽和抛出、碰撞运动
+                        </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-16">
+                        <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-16-0">
+                            拖拽和抛出<span class="badge">demo</span>
+                            </button>
+                                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-demo-16-1">
+                            碰撞运动<span class="badge">demo</span>
+                            </button>
+                            
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-16-0" href="5.16/拖拽和抛出.css">
+                            拖拽和抛出<span class="badge">css</span>
+                            </button>
+                                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-code-16-1" href="5.16/碰撞运动.css">
+                            碰撞运动<span class="badge">css</span>
+                            </button>
+                            
+                                                        <div class="modal fade" id="modal-demo-16-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.16/拖拽和抛出.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-demo-16-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"  data-src="5.16/碰撞运动.html" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                                                        
+                                                        <div class="modal fade" id="modal-code-16-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                                                        <div class="modal fade" id="modal-code-16-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <pre style="background-color:#fb;"><div class="modal-content" style="background-color:#000;color:#fff;"></div></pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                            </div>
+        </div>
+        <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        
+        <script>
+                    $('.modal').on('show.bs.modal', function () {
+                        $(this).find('iframe').each(function(){
+                            this.src = $(this).data('src');
+                        });
+                    })
+        </script>
+        <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F898f1edef336abc9b9fd81a6e1144a65' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        
+    </body>
+</html>
