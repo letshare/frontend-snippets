@@ -1,0 +1,13 @@
+# 忽略mac文件
+.DS_Store
+
+#忽略工程文件
+/code.sublime-project
+/code.sublime-workspace
+
+#忽略库文件
+node_modules
+bower_components
+
+#忽略临时文件
+templates_c
