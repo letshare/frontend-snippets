@@ -1166,7 +1166,23 @@
                         $(this).find('iframe').each(function(){
                             this.src = $(this).data('src');
                         });
-                    })
+                    });
+                    $(function(){
+                        var old;
+                        var hash = location.hash;
+                        if(/collapse/.test(hash)){
+                            $(hash).collapse('show');
+                            old = hash;
+                        }
+                        $(window).on('hashchange', function() {
+                            var hash = location.hash;
+                            if(/collapse/.test(hash)){
+                                $(old).collapse('hide');
+                                $(hash).collapse('show');
+                                old = hash;
+                            }
+                        });
+                    });
         </script>
 
         <script type="text/javascript">

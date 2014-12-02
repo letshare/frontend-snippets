@@ -50,8 +50,8 @@
                             </div>
                             <div id="collapse-{$index}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-{$index}">
                                 <div class="panel-body">
-                                    {foreach $js_content_arr[$index] as $subtitle}
-                                    <span class="label label-success" style="font-size:1.1em;line-height:2.5;margin:0 .5em 0 .5em;">{$subtitle}</span>
+                                    {foreach $js_content_arr[$index] as $subindex => $subtitle}
+                                    <span class="label label-success" data-toggle="modal" data-target="#modal-js-{$index}" data-index="{$subindex}" style="font-size:1.1em;line-height:2.5;margin:0 .5em 0 .5em;cursor:pointer">{$subtitle}</span>
                                     {/foreach}
                                 </div>
                             </div>
@@ -81,8 +81,8 @@
                             </div>
                             <div id="collapse-css-{$index}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-css-{$index}">
                                 <div class="panel-body">
-                                    {foreach $css_content_arr->$index as $subtitle}
-                                    <span class="label label-success" style="font-size:1.1em;line-height:2.5;margin:0 .5em 0 .5em;">{implode('、',$subtitle)}</span>
+                                    {foreach $css_content_arr->$index as $subindex => $subtitle}
+                                    <span class="label label-success" data-toggle="modal" data-target="#modal-css-{$index}" data-index="{$subindex}" style="font-size:1.1em;line-height:2.5;margin:0 .5em 0 .5em;cursor:pointer">{implode('、',$subtitle)}</span>
                                     {/foreach}
                                 </div>
                             </div>
@@ -104,6 +104,15 @@
                                     this.src = $(this).data('src');
                                 });
                             })
+                            $(".panel-collapse span").click(function() {
+                                /* Act on the event */
+                                var target = $ ( $(this).data('target') );
+                                var index = $(this).data('index');
+                                $(target).find('iframe').each(function(){
+                                    var src = $(this).data('src').replace(/#[\w\W]+/,'');
+                                    $(this).data('src', src + '#collapse-'+ index) ;
+                                });
+                            });
         </script>
 
         <script type="text/javascript">
