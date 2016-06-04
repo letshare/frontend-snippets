@@ -1,0 +1,3 @@
+$(function () {
+	$('.jqzoom').jqzoom();
+});

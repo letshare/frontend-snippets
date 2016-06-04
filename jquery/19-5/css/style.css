@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* header
+ ---------------------------------------- */
+
+/* container
+ ---------------------------------------- */
+dt {
+	width: 11em;
+}
+
+dd {
+	margin: -1.5em 0 1em 0;
+	padding: 0 0 1em 12em;
+	border-bottom: 1px solid #ccc;
+}
+
+#submitform {
+	width: 320px;
+	text-align: right;
+}
+
+#SaveAccount {
+	margin: 10px 0 0 0;
+}
+
+/* footer
+ ---------------------------------------- */
+
+/* class
+ ---------------------------------------- */
+fieldset {
+	width: 320px;
+}
+
+legend {
+	font-size: 1.6em;
+	padding: 10px 0px;
+	color: #b0232a;
+	font-weight: bold;
+}
+
+.prev, .next {
+	background-color: #b0232a;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.prev:hover, .next:hover {
+	background-color: #000;
+	text-decoration: none;
+}
+
+.prev {
+	float: left;
+}
+
+.next {
+	float: right;
+}
+
+#steps {
+	list-style: none;
+	width: 100%;
+	overflow: hidden;
+}
+
+#steps li {
+	font-size: 24px;
+	float: left;
+	padding: 10px;
+	color:#b0b1b3;
+}
+
+#steps li span {
+	font-size: 11px;
+	display:block;
+}
+
+#steps li.current {
+	color: #000;
+}
+
+#makeWizard {
+	background-color: #b0232a;
+	color: #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+#makeWizard:hover {
+	background-color: #000;
+}

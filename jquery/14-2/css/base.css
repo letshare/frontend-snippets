@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* base
+ ---------------------------------------- */
+html {
+	background: #def;
+}
+
+body {
+	background: #def;
+	font-family: "宋体",Arial;
+	font-size: 95%;
+}
+
+/* header
+ ---------------------------------------- */
+#header {
+	font-size: 200%;
+}
+
+/* container
+ ---------------------------------------- */
+.container {
+	background: #fff;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+/* footer
+ ---------------------------------------- */
+#footer {
+	font-size: 70%;
+}

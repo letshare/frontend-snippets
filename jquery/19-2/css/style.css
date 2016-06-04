@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* header
+ ---------------------------------------- */
+
+/* container
+ ---------------------------------------- */
+#container dt {
+	width: 11em;
+}
+
+#container dd {
+	margin: -1.5em 0 1em 0;
+	padding: 0 0 1em 12em;
+	border-bottom: 1px solid #ccc;
+}
+
+#submitform {
+	text-align: right;
+}
+
+/* footer
+ ---------------------------------------- */
+
+/* class
+ ---------------------------------------- */
+.tipped {
+	color: #bbb;
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>表单检查「jQuery Form Validators」</title>
+<link rel="stylesheet" type="text/css" href="css/import.css" media="all" />
+
+<link rel="stylesheet" type="text/css" href="css/validator.css" media="all" />
+
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.validator-0.3.3.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="header">
+<h1>表单检查「jQuery Form Validators」</h1>
+<!-- #header --></div>
+
+<div class="container"><div id="container">
+
+<form>
+<dl>
+<dt>姓名<span class="require">必须</span></dt>
+<dd><input type="text" name="name" id="name" value="" size="30" maxlength="256" validate="form" require="<p>请输入姓名。</p>" />
+<p class="caption">例）王 老汉</p></dd>
+<dt>电子邮件<span class="require">必须</span></dt>
+<dd><input type="text" name="email" id="email" value="" size="30" maxlength="256" validate="form" require="</p>请输入电子邮件地址。</p>" regular="<p>请检查输入的邮件地址的形式。</p><p>例）example@address.com</p>" validExpress="[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?" />
+<p class="caption">例）example@address.com</p></dd>
+<dt>密码<span class="require">必须</span></dt>
+<dd><input type="password" name="password" id="password" value="" size="30" maxlength="256" validate="form" require="<p>请输入密码。</p>" custom="<p>密码必须6个字符或者6个字符以上。</p>" customFn="return this.value.length >= 6;" />
+<dt>密码确认<span class="require">必须</span></dt>
+<dd><input type="password" value="" size="30" maxlength="256" validate="form" require="<p>请输入密码确认。</p>" compare="<p>输入的密码不一致。</p>" compareTo="newpassword" /></dd>
+<dt>性別<span class="require">必须</span></dt>
+<dd>
+<span validate="form" require="<p>请选择性别。</p>">
+<input type="radio" name="gender">男性</input>
+<input type="radio" name="gender">女性</input>
+</span>
+</dd>
+</dl>
+<div id="submitform">
+<input type="submit" name="submitbtm" id="submitbtm" value="提交" onclick="return validate('form');"/>
+</div>
+</form>
+
+<!-- #container --></div><!-- .container --></div>
+
+<div id="footer">
+<!-- #footer --></div>
+
+</body>
+</html>

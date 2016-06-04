@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* header
+ ---------------------------------------- */
+
+/* container
+ ---------------------------------------- */
+
+h2 {
+	width: 300px;
+	text-align: center;
+}
+
+ul {
+	width: 300px;
+	text-align: center;
+}
+
+li {
+	height: 3em;
+	width: 40px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 3em;
+	float: left;
+}
+
+#result {
+	clear: both;
+}
+
+/* footer
+ ---------------------------------------- */
+
+/* class
+ ---------------------------------------- */
+.ui-selecting {
+	background: #feca40;
+}
+
+.ui-selected {
+	background: #F39814;
+	color: white;
+}

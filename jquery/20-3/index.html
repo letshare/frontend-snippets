@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>切换CSS「Stylesheet switcher toggle」</title>
+<link rel="stylesheet" type="text/css" href="css/import.css" media="all" />
+
+<link rel="stylesheet" type="text/css" href="css/style1.css" title="style1" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/style2.css" title="style2" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="css/style3.css" title="style3" media="screen" />
+
+
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/stylesheetToggle.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jQuerySampleScript.js"></script>
+
+</head>
+
+<body>
+
+<div id="header">
+<h1>切换CSS「Stylesheet switcher toggle」</h1>
+<!-- #header --></div>
+
+<div class="container"><div id="container">
+
+<p>使用Toggle功能进行样式单的切换。</p>
+<p><a id="toggler" href="#">Toggle</a></p>
+
+<p>切换为指定的style。</p>
+<ul>
+<li><a href="#" rel="style1" class="styleswitch">styles1</a></li>
+<li><a href="#" rel="style2" class="styleswitch">styles2</a></li>
+<li><a href="#" rel="style3" class="styleswitch">styles3</a></li>
+</ul>
+
+<!-- #container --></div><!-- .container --></div>
+
+<div id="footer">
+<!-- #footer --></div>
+
+</body>
+</html>

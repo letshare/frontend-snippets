@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Spacegallery演示</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" media="screen" type="text/css" href="css/spacegallery.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/eye.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/spacegallery.js"></script>
+<style type="text/css">
+#myGallery{
+  width:400px;
+  height:300px;
+}
+</style>
+</head>
+<body>
+
+<h2>Spacegallery演示</h2>
+<div id="myGallery" class="spacegallery">
+	<img src="images/bw3.jpg" alt="" />
+	<img src="images/lights3.jpg" alt="" />
+	<img src="images/bw2.jpg" alt="" />
+	<img src="images/lights2.jpg" alt="" />
+	<img src="images/bw1.jpg" alt="" />
+	<img src="images/lights1.jpg" alt="" />
+</div>
+
+</body>
+<script type="text/javascript">
+$(function(){
+    $('#myGallery').spacegallery();
+});
+</script>
+</html>

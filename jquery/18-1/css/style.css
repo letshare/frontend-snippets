@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* header
+ ---------------------------------------- */
+
+/* container
+ ---------------------------------------- */
+
+ul {
+	height: 300px;
+	width: 300px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+li {
+	height:3em;
+	line-height: 3em;
+	padding: 0 0 0 1em;
+	border: 1px solid #ccc;
+}
+
+/* footer
+ ---------------------------------------- */
+
+/* class
+ ---------------------------------------- */

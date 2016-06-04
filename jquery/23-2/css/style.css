@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* header
+ ---------------------------------------- */
+
+/* container
+ ---------------------------------------- */
+#map_canvas {
+	height: 500px;
+	width: 500px;
+}
+
+#locationTitle {
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+/* footer
+ ---------------------------------------- */
+
+/* class
+ ---------------------------------------- */

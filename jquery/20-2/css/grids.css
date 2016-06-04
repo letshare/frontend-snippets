@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* header
+ ---------------------------------------- */
+#header {
+	height: 90px;
+	width: 700px;
+	margin: 0 auto;
+	padding: 20px 0 0;
+}
+
+/* container
+ ---------------------------------------- */
+#container {
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+	width: 520px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+/* footer
+ ---------------------------------------- */
+#footer {
+	height: 90px;
+	width: 700px;
+	margin: 0 auto;
+	padding: 20px 0;
+}

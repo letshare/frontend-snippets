@@ -1,0 +1,109 @@
+* { margin:0; padding:0; }
+img { border:0; margin:4px; }
+a { outline:none; }
+.zoom2 { margin:0; }
+
+body { text-align:center; margin:30px; background:#111; color:snow; }
+
+#title { margin:20px; }
+#title h1 { font:20pt Georgia; color:#FFF; }
+#title h2 { font:14pt Georgia; color:#EEE; }
+#title h3 { font:10pt Georgia; color:#CCC; }
+
+#content {
+  width:496px;
+  margin: 0 auto;
+  border:1px solid #080808;
+  }
+#content .inner {
+  width:470px;
+  margin: 0 auto;
+  border:1px solid #222;
+  padding:12px;
+  text-align:left;
+  font:10pt Georgia;
+  word-spacing:2px;
+  color:snow;
+  background:#181818;
+  padding:12px;
+  }
+
+#content a { color:#DDD; text-decoration:none; }
+#content a:hover, #content a:focus { color:#FFF; text-decoration:underline; }
+#content p { text-indent:1em; margin-bottom:12px;}
+#content i { font-size: 9pt; }
+#content .inner div { margin:4px 12px; }
+
+a.download {
+  padding-left:20px; line-height:20px;
+  background:url(download.png) no-repeat top left;
+}
+
+hr {
+  border:none;
+  border-top:1px solid #111;
+  border-bottom:1px solid #222;
+  height:2px;
+  margin:12px;
+  _margin:-6px 12px 6px 12px;
+  }
+  
+a#zoomme img {
+  margin-bottom:30px;
+  margin-right:2px;
+  border:3px solid #181818;
+  }
+a#zoomme:hover img { border:3px solid #88C; }
+a#zoomme.red:hover img { border:3px solid #B66; }
+a#zoomme img.zoom2 { border:none; }
+a#zoomme:hover img.zoom2 { border:none; }
+
+#bleach .zoomi { margin:-35px 4px 3px 3px; border:1px solid #111; }
+#bleach .zoom2 { border:1px solid #333; }
+
+.bw img { display:block; margin:4px auto; }
+.bw .zoom2 { margin:0px; }
+
+#content div.readmore {
+  display:none;
+  border-top:   1px solid #000;
+  border-left:  1px solid #000;
+  border-right: 1px solid #222;
+  border-bottom:1px solid #222;
+  background:#111;
+  margin-top:14px;
+  }
+#content div.readmore .inner {
+  padding:5px;
+  padding-top:3px;
+  margin:0;
+  width:auto;
+  background:transparent;
+  font-size:0.9em;
+  font-family:Trebuchet MS;
+  border-top:   1px solid #080808;
+  border-left:  1px solid #080808;
+  border-right: 1px solid #161616;
+  border-bottom:1px solid #161616;
+  word-spacing:0px;
+  }
+#content div.readmore a { text-decoration:underline; }
+#content div.readmore pre {
+  display:block;
+  width:410px;
+  margin:10px auto;
+  background:#0D0D0D;
+  border-top:1px solid #1D1D1D;
+  border-bottom:1px solid #1D1D1D;
+  padding:5px 10px 7px 10px;
+  overflow:auto;
+}
+#content div.readmore code { font-family: Consolas, Courier New; }
+
+a.readmore {
+  float:right;
+  margin-top:-14px;
+  padding-right:8px;
+  font-family:Trebuchet MS;
+  font-size:0.7em;
+  }

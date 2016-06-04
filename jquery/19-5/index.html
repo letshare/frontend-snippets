@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>向导形式的表单「formToWizard」</title>
+<link rel="stylesheet" type="text/css" href="css/import.css" media="all" />
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/formToWizard.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jQuerySampleScript.js"></script>
+
+</head>
+
+<body>
+
+<div id="header">
+<h1>向导形式的表单「formToWizard」</h1>
+<!-- #header --></div>
+
+<div class="container"><div id="container">
+
+<form id="SignupForm">
+<fieldset>
+<legend>个人信息</legend>
+<dl>
+<dt><label for="Name">姓名</label></dt>
+<dd><input id="Name" type="text" /></dd>
+<dt><label for="Email">电子邮箱</label></dt>
+<dd><input id="Email" type="text" /></dd>
+<dt><label for="Password">密码</label></dt>
+<dd><input id="Password" type="password" /></dd>
+</dl>
+</fieldset>
+<fieldset>
+<legend>公司信息</legend>
+<dt><label for="CompanyName">公司名称</label></dt>
+<dd><input id="CompanyName" type="text" /></dd>
+<dt><label for="Website">公司主页</label></dt>
+<dd><input id="Website" type="text" /></dd>
+<dt><label for="CompanyEmail">公司的联络邮箱</label></dt>
+<dd><input id="CompanyEmail" type="text" /></dd>
+</fieldset>
+<fieldset>
+<legend>支付信息</legend>
+<dt><label for="NameOnCard">信用卡公司</label></dt>
+<dd><input id="NameOnCard" type="text" /></dd>
+<dt><label for="CardNumber">信用卡号码</label></dt>
+<dd><input id="CardNumber" type="text" /></dd>
+<dt><label for="CreditcardMonth">有効期限</label></dt>
+<dd>
+<select id="CreditcardMonth">
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<select id="CreditcardYear">
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+</select>
+</dd>
+<dt><label for="City">所属省市</label></dt>
+<dd><input id="City" type="text" /></dd>
+<dt><label for="Address1">地址1</label></dt>
+<dd><input id="Address1" type="text" /></dd>
+<dt><label for="Address2">地址2</label></dt>
+<dd><input id="Address2" type="text" /></dd>
+</fieldset>
+
+<div id="submitform">
+<input id="SaveAccount" type="button" value="提交" />
+</div>
+</form>
+
+<!-- #container --></div><!-- .container --></div>
+
+<div id="footer">
+<!-- #footer --></div>
+
+</body>
+</html>

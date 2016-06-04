@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* header
+ ---------------------------------------- */
+
+/* container
+ ---------------------------------------- */
+
+#draggable, #resule {
+	border: 1px solid #ccc;
+	margin: 5px;
+	float: left;
+}
+
+#droppable {
+	height: 100px;
+	width: 100px;
+	border: 1px solid #ccc;
+	margin: 5px;
+	padding: 5px;
+	float: left;
+}
+
+#container:after {
+	clear: both;
+}
+
+li {
+	width: 100px;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #bbb;
+	background-color: #eee;
+}
+
+.listTitle {
+	color: #f00;
+}
+
+/* footer
+ ---------------------------------------- */
+
+/* class
+ ---------------------------------------- */

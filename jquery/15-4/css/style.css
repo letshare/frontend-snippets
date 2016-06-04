@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* header
+ ---------------------------------------- */
+
+/* container
+ ---------------------------------------- */
+
+#effect {
+	height: 15em;
+	width: 15em;
+	border: 1px solid #ccc;
+	background-color: #f00;
+}
+
+/* footer
+ ---------------------------------------- */
+
+/* class
+ ---------------------------------------- */

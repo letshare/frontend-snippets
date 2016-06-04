@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* header
+ ---------------------------------------- */
+
+/* container
+ ---------------------------------------- */
+
+#container:after {
+	clear: both;
+}
+
+/* footer
+ ---------------------------------------- */
+
+/* class
+ ---------------------------------------- */
+.column {
+	margin: 0 10px 0 0;
+	padding: 5px;
+	border: 1px solid #ccc;
+	width: 150px;
+	float: left;
+}
+
+.portlet {
+	border: 1px solid #ccc;
+	margin: 0 0 1em 0;
+}
+
+.header {
+	border: 1px solid #ccc;
+	margin: 0.3em;
+	padding: 0 0 4px 0.2em;
+}
+
+.content {
+	margin: 0.3em;
+}
+

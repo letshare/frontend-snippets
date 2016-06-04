@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/**
+ * JavaScript/jQuery Samples
+ *
+ */
+
+
+/* header
+ ---------------------------------------- */
+
+/* container
+ ---------------------------------------- */
+
+/* footer
+ ---------------------------------------- */
+
+/* class
+ ---------------------------------------- */
+
+#mytabset {
+	width: 400px;
+}
+
+.panel {
+	border: 1px solid #ccc;
+}
+
+/*semantic tabs*/
+ul.semtabs {
+	margin: 0 auto;
+	clear: both;
+	border-bottom: 4px solid #4c77b3;
+	height: 25px;
+	list-style: none !important;
+}
+
+ul.semtabs li {
+	float: left;
+	height: 30px;
+	display: block;
+	margin: 0 !important;
+	background-image: none;
+}
+
+ul.semtabs li a {
+/*  height:15px;*/
+	line-height: 15px;
+	display:block;
+	padding: 5px 3em;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #e6eeee;
+}
+
+ul.semtabs li.active a {
+	background-color: #4c77b3;
+	color: #fff;
+}
+/*end semantic tabs*/

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>输入提示信息「jQuery Form Tips」</title>
+<link rel="stylesheet" type="text/css" href="css/import.css" media="all" />
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.formtips.1.2.2.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jQuerySampleScript.js"></script>
+
+</head>
+
+<body>
+
+<div id="header">
+<h1>输入提示信息「jQuery Form Tips」</h1>
+<!-- #header --></div>
+
+<div class="container"><div id="container">
+
+<form id="formContact" name="formContact" method="post" action="">
+<dl>
+<dt>姓名</dt>
+<dd><input type="text" name="name" id="name" class="help" title="请输入您的姓名。" value="" size="20" maxlength="256" />
+</dd>
+<dt>拼音</dt>
+<dd><input type="text" name="kana_name" id="kana_name" class="help" title="请输入姓名的拼音。" value="" size="20" maxlength="256" /></dd>
+<dt>我要反映问题</dt>
+<dd><textarea name="message" id="message" class="help" title="如果您有任何问题，请在此输入。" cols="20" rows="5"></textarea></dd>
+</dl>
+<input type="submit" name="submitbtm" id="submitbtm" value="提交" />
+</form>
+
+<!-- #container --></div><!-- .container --></div>
+
+<div id="footer">
+<!-- #footer --></div>
+
+</body>
+</html>
